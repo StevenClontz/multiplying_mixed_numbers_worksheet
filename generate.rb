@@ -132,7 +132,7 @@ class MultiplicationProblem
 end
 
 
-template_filename = 'worksheet.tex.erb'
+template_filename = 'test.tex.erb'
 template_file = File.read template_filename
 template_erb = ERB.new template_file
-File.write 'worksheet.tex', template_erb.result(binding)
+File.write 'test.tex', template_erb.result(binding)
